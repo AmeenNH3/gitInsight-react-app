@@ -30,7 +30,7 @@ const UserInfo = () => {
       color: "purple",
     },
     {
-      id: 1,
+      id: 4,
       icon: <GoGist className="icon"></GoGist>,
       label: "gists",
       value: public_gists,
