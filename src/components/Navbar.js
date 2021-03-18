@@ -3,17 +3,21 @@ import styled from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
-  return <Wrapper>navbar component</Wrapper>;
+  return (
+    <Wrapper>
+      <h3>Ameen</h3>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.nav`
-  padding: 1.5rem;
-  margin-bottom: 4rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
   background: var(--clr-white);
   text-align: center;
   display: grid;
   grid-template-columns: auto auto 100px;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 1.5rem;
   h4 {
