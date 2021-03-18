@@ -21,21 +21,21 @@ const Card = () => {
         <img src={avatar_url} alt={name} />
         <div className="">
           <h4>{name}</h4>
-          <p>@{twitter_username || "github user"}</p>
+          <p>{twitter_username ? `@${twitter_username}` : ""}</p>
         </div>
         <a href={html_url}>follow</a>
       </header>
       <p className="bio">{bio}</p>
       <div className="links">
         <p>
-          <MdBusiness></MdBusiness> {company}
+          <MdBusiness></MdBusiness> {company || "Company Not Mentioned"}
         </p>
         <p>
-          <MdLocationOn></MdLocationOn> {location || "planet earth"}
+          <MdLocationOn></MdLocationOn> {location || "Planet Earth"}
         </p>
         <a href={`https://${blog}`}>
           <MdLink></MdLink>
-          {blog}
+          {blog || "No blog found"}
         </a>
       </div>
     </Wrapper>
