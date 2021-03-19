@@ -5,6 +5,15 @@ import styled from "styled-components";
 const Followers = () => {
   const { followers } = React.useContext(GithubContext);
   // console.log(followers);
+  if (followers.length <= 0) {
+    return (
+      <Wrapper>
+        <div className="followers">
+          <p>The user has no followers</p>
+        </div>
+      </Wrapper>
+    );
+  }
   return (
     <Wrapper>
       <div className="followers">
@@ -55,6 +64,12 @@ const Wrapper = styled.article`
     grid-template-rows: repeat(auto-fill, minmax(45px, 1fr));
     gap: 1.25rem 1rem;
     padding: 1rem 2rem;
+  }
+  .followers {
+    p {
+      text-align: center;
+      margin: auto;
+    }
   }
   article {
     transition: var(--transition);

@@ -20,6 +20,8 @@ ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
 // STEP 3 - Creating the JSON object to store the chart configurations
 
 const ChartComponent = ({ data }) => {
+  // console.log(data);
+
   const chartConfigs = {
     type: "pie3d", // The chart type
     width: "100%", // Width of the chart
