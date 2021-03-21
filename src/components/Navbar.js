@@ -15,9 +15,6 @@ const Navbar = () => {
   return (
     <>
       <Wrapper>
-        <div className="main-title">
-          <h3>GitHub Search</h3>
-        </div>
         {isUser && user.picture && (
           <img src={user.picture} alt={user.name}></img>
         )}
@@ -49,7 +46,7 @@ const Wrapper = styled.nav`
   background: var(--clr-white);
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr auto auto 100px;
+  grid-template-columns: auto auto 100px;
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
@@ -73,13 +70,6 @@ const Wrapper = styled.nav`
     letter-spacing: var(--spacing);
     /* color: var(--clr-grey-5); */
     cursor: pointer;
-  }
-  .main-title {
-    display: flex;
-    h3 {
-      margin-bottom: 0;
-      text-transform: none;
-    }
   }
 `;
 
