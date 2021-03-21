@@ -28,7 +28,7 @@ const Search = () => {
             <MdSearch></MdSearch>
             <input
               type="text"
-              placeholder="Enter Github User"
+              placeholder="Enter github username"
               value={user}
               onChange={(e) => setUser(e.target.value)}
             />
