@@ -25,6 +25,7 @@ const Navbar = () => {
           onClick={() => {
             logout({ returnTo: window.location.origin });
           }}
+          className="btn"
         >
           logout
         </button>
@@ -57,11 +58,13 @@ const Wrapper = styled.nav`
   }
   button {
     background: transparent;
+    background: var(--clr-primary-5);
+    color: var(--clr-primary-10);
     border: transparent;
     font-size: 1.2rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
-    color: var(--clr-grey-5);
+    /* color: var(--clr-grey-5); */
     cursor: pointer;
   }
 `;
