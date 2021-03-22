@@ -8,7 +8,7 @@ const Login = () => {
     <Wrapper>
       <div className="container">
         <img src={loginImg} alt="login" />
-        <h1>github user</h1>
+        <h1>gitHub search</h1>
         <button className="btn" onClick={loginWithRedirect}>
           login / sign up
         </button>
